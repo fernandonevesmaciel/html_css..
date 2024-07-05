@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menus</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+        }
+        div > .numero1 {
+            display:none
+        }
+
+        div:hover > .numero1 {
+            display: block;
+            color: white;
+            background-color: green;
+            width: 300px;
+        }
+        div > p {
+            display:none
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: green;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">menu</div>
+    <div id="d2">atalhos
+        <p>ana julia</p>
+    </div>
+    <div id="d3">contatos
+        <p class="numero1">(43)991795542</p>
+    </div>
+    
+</body>
+</html>
