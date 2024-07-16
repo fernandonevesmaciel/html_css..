@@ -1,0 +1,11 @@
+HIERARQUIA DE TABELAS (simples)
+    TABLE => tabela
+      TABLE ROWS = linha de tabela
+        TABLE HEADER = cabeçalho da tabela
+        TABLE DATA = dado da tabela
+
+pelo w3c não e obrigatorio do fechamento das tags <td>.
+
+se a HIERARQUIA não for obedecida a liha irá aparecer antes ou depois da tabela.
+
+border-collapse: collapse;(dados colados, colapsados um ao outro.)
