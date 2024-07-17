@@ -9,3 +9,5 @@ pelo w3c não e obrigatorio do fechamento das tags <td>.
 se a HIERARQUIA não for obedecida a liha irá aparecer antes ou depois da tabela.
 
 border-collapse: collapse;(dados colados, colapsados um ao outro.)
+
+vertical-align: middle; para alinhar verticalmente o dado da tabela ao centro da tabela ou no meio da tabela.
