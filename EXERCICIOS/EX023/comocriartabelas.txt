@@ -18,3 +18,15 @@ vertical-align: middle; para alinhar verticalmente o dado da tabela ao centro da
 no <th> se o dado a baixo da linha estiver em coluna uso scope="col", se o dado estiver na mesma linha que o titulo uso scope="row"
 
 para que faça sentido para o dispositivos de busca.
+
+tbody > tr:nth-child para dizer que na minha tabela no corpo dela de duas em duas ira ter um estilo ou cor diferente.
+
+para o cabeçalho da tabela seguir o resto da tabela quando a tabela e muito grande usamos no style 
+table{
+  position:relative
+}
+ thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+        }
