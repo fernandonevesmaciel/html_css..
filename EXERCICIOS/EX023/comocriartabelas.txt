@@ -30,3 +30,9 @@ table{
             top: -1px;
             background-color:gray;
         }
+
+para que uma linha se preencha ou mescle no lugar da outra no caso ocupe espaço da outra usa por exemplo
+<td rowspan="2">
+para que ela se preencha em uma coluna usa-se 
+<td colspan="2".
+
