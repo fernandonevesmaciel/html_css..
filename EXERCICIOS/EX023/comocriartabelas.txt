@@ -10,6 +10,8 @@ se a HIERARQUIA não for obedecida a liha irá aparecer antes ou depois da tabel
 
 border-collapse: collapse;(dados colados, colapsados um ao outro.)
 
+border-collapse: separete; (dados separados.)
+
 vertical-align: middle; para alinhar verticalmente o dado da tabela ao centro da tabela ou no meio da tabela.
 
 <th> titulo <th>
@@ -36,3 +38,8 @@ para que uma linha se preencha ou mescle no lugar da outra no caso ocupe espaço
 para que ela se preencha em uma coluna usa-se 
 <td colspan="2".
 
+nos th's pode usar a função scope que diz o que o titulo está falando 
+para somente uma coluna usamos scope="col"
+para somente uma linha usamos scope="row"
+para quando é mais de uma coluna usamos scope="colgroup"
+para quando é mais de uma linha usamos scope"rowgroup".
