@@ -43,3 +43,51 @@ para somente uma coluna usamos scope="col"
 para somente uma linha usamos scope="row"
 para quando é mais de uma coluna usamos scope="colgroup"
 para quando é mais de uma linha usamos scope"rowgroup".
+
+Para que eu mude a configuração de uma coluna toda posso usar a tags ex.
+
+<colgroup>
+    <col class="cnome"
+    <col class="cidade"
+</colgroup>
+
+caso queira que a mesma configuração vá para varias colunas uso a tags
+
+<colgroup>
+    <col class="cgrupo span="3" (aqui no caso para configurar as 3 colunas)
+</colgroup>
+
+posso tambem criar uma classe como:
+
+.amarelo{
+  background-color: yellow
+}
+.vermelho{
+  background-color: red
+}
+
+e colocar direto em colgroup diretamente a classe na coluna:
+
+<colgroup>
+    <col class="amarelo">
+    <col class="vermelho">
+    <col class="amarelo">
+    <col class="vermelho">
+</colgroup>
+
+Para que meu site fique responsivo e minha tabela quando diminuo o tamanho da tela ela crie um ponto de rolagem so para ela não deformando meu site eu envolvo toda minha tabela em uma div. 
+e crio a seguinte tags.
+
+<div id="container">
+  <table>
+  </table>
+</div>
+
+crio em style uma condição de rolagem para essa div.
+
+div#container{
+            overflow-x: auto;
+        }
+ 
+ aqui estou dizendo que essa tabela vai ter uma rolagem em x ou seja para o lado.
+ 
