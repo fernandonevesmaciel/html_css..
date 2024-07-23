@@ -1,0 +1,39 @@
+o iframe e como se conseguisse abrir uma uma tela ou uma guia dentro do meu site
+basta colocar a tag <iframe src"o site que vc quiser" frameborder="0"><iframe>.
+entre essa tag por medida de segurança caso o dispositivo usado não abre o iframe. usa-se a tag <a> criando um link
+
+ex:
+
+<iframe src="https://gustavoguanabara.github.io" frameborder="0">
+    
+    <a href="https://gustavoguanabara.github.io" target="_blank"> no github</a>
+    
+</iframe>
+
+tamanho padrão de iframe e de 300x150px
+
+esse tamanho posso alterar, para alterar altura uso dentro de iframe height:
+
+<iframe src="https://www.cursoemvideo.com" frameborder="0" height="500"></iframe>
+
+para alterar largura uso widht:
+
+<iframe src="https://gustavoguanabara.github.io" frameborder="0" width="500"></iframe>
+
+para alterar os dois:
+
+<iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500"></iframe>
+
+as css são soberanas as configurações que estão nelas sempre ira prevalecer.
+
+ex:
+
+iframe{
+        width: 400px;
+        height: 400px;
+
+        }
+
+em alguns navegadores se eu quiser que minha pagina no iframe não tenha rolagem uso a tag scolling="no" dentro da tag <iframe></iframe> ex:
+
+<iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no"></iframe>
