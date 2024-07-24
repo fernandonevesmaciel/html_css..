@@ -47,3 +47,7 @@ para que eu faço um link abrir em um frame na minha propria pagina eu nomeio me
         <p>Infelizmente seu navegador não é compatível com isso.</p>
 
     </iframe>
+
+no iframe posso criar um codigo dentro dele se eu quiser usando a tag srcdoc="" entre essas aspas crio o meu codigo.
+ex:
+<iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio ut ipsum quo minus, tenetur facere praesentium id, ab, molestiae eveniet maiores excepturi? Cumque quod fugiat necessitatibus, ex doloribus est? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>"></iframe>.
