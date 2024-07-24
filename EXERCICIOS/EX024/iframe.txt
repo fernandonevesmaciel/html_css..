@@ -37,3 +37,13 @@ iframe{
 em alguns navegadores se eu quiser que minha pagina no iframe não tenha rolagem uso a tag scolling="no" dentro da tag <iframe></iframe> ex:
 
 <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scolling="no"></iframe>
+
+para que eu faço um link abrir em um frame na minha propria pagina eu nomeio meu iframe, e depois em target no meu link coloco o nome que coloquei no meu frame. ex:
+
+<li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+
+
+<iframe id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+
+    </iframe>
