@@ -1,0 +1,45 @@
+para criar formularios usamos 
+<form>
+
+</form>
+
+para criar caixinhas para nosso formularios usamos o <input>
+
+para desligar a caixinha que aparece automatico com os nomes ou dados que ja foram digitados usamos em <form autocomplete="off"></form>.
+
+usamos <label for=""></label> para criar uma relação entre meu nome do formulario e a sua <input type="text">
+
+ex:
+
+<form action="cadastro.php" autocomplete="off">
+    <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+    <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+    <p><input type="submit" value="Enviar"></p>
+</form>
+
+dois metodos para envio de formulario.
+method="get" que aparece no url 
+e o method="post"que não aparece no url mas aparece se você for em inspecionar.
+
+para usar o get não pode utrapassar 3 mil letras 
+e se o site usar dados sensiveis como cartão senha e essas coisas
+e envio de arquivos.
+
+para que seja obrigatório escrever o usuario e senha devemos colocar em <input type="text" required>
+assim so deixa enviar depois que eu digite algo nesses campos.
+
+para que eu queira que o usuario que for acessar o site insira algo no meu input com no minimo 5 letras e maximo de 8 letras faço um required 
+ex:
+
+<input type="text" name="" id="" required minlength="5" maxlength="8">
+
+caso queira colocar uma dica do que o usuario vai inserir no meu campo de input
+
+uso a placeholder
+
+ex:
+
+<input type="text" name="" id="" placeholder="usuario">
+
+no autocomplete para usar ele em um dos campos 
+podemos colocar ele na frente dos inputs assim ele ira aparecer  uma serie de opções para suas funções.
