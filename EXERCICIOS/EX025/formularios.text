@@ -43,3 +43,18 @@ ex:
 
 no autocomplete para usar ele em um dos campos 
 podemos colocar ele na frente dos inputs assim ele ira aparecer  uma serie de opções para suas funções.
+
+<p>
+            <label for="imedia">Medía</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0,5">
+        </p>
+
+min= valor minimo de números que posso colocar na minha input
+max= valor máximo de números que posso colocar na minha input
+
+placeholder= o que vai aparecer na minha input quando ela está vazia.
+
+step= e de quando em quantos números meu número vai contar exemplo a cima esta em 0,5 porque vou dizer que meu numero vai contar de 0,5 pontos.
+
+para que eu define um maximo e minimo em um input text, uso required maxlength para maximo, e minlength para minimo.
+
