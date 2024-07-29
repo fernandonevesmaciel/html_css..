@@ -156,3 +156,46 @@ funções radio e checkbox:
             <label for="ifoto">Foto do Perfil</label>
             <input type="file" name="foto" id="ifoto">
         </p>
+
+        para criar uma lista com opções ja pre-definidas uso as tags:
+
+        <p>
+            <label for="iesten">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>-----escolha----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        para criar uma lista de opções onde possa digitar ou selecionar uma opção pre-definida que ja esteja ali para selecionar:
+
+          <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option >Contabilista</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+
+        para criar um campo onde o visitante possa digitar uma mensagem, uso a tag:
+        
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="escreva sua mensagem aqui......"></textarea>
+        </p>
+    onde a tag cols="" serve o numero de colunas que vai aparecer no site e rows="" e o numero de linhas.
+
+    
