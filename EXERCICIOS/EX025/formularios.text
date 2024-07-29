@@ -138,3 +138,21 @@ funções radio e checkbox:
 
 
         radio as opções tem que ter o mesmo name para que possa trocar para outro quando selecionado.
+
+        input para se quiser que meu visitante do site escolha uma cor:
+         <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        input para se quiser que o visitante do site escolha um nivel 
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+
+        input para que o visitante consiga mandar algum arquivo para o site:
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
