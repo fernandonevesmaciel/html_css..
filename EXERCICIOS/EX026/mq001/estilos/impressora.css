@@ -16,3 +16,7 @@ html{
 menu{
     display: none;
 }
+
+article::after{
+    content: 'Esse artigofoi impresso através do site www.cursoemvideo.com';
+}
