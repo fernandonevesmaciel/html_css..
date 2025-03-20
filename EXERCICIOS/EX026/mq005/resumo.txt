@@ -112,3 +112,158 @@ article > p{
 }
 
 aqui estou colocando o alinhamento do meu paragrafo de forma justificada, estou deixando um espaçamento dele em 20px, text-indent e o espaçamento da primeira letra do meu paragrafo, estou deixando ela em 20px.
+
+
+------------------------ para fazer o menu hamburguer ----------------
+
+para fazer o menu hamburguer tenho que mudar e acrescentar alguns codigos a cima irei copiar o codigo como está e comentar somente o que mudei do antigo.
+
+----------------------------parte do html------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   
+    /*tem que adicionar o link do google para que ele libere a biblioteca de icones para poder usar em seu site*/
+
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+
+    /* para adicionar o icone escolha onde ele vai ficar no programa e cole o codigo a cima. a parte de onclick e a parte do javaScript para dar animação e ele poder aparecer o resto dos itens que vão estar ocultos*/
+
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam hic amet ipsum laudantium maxime! Accusantium, aut est nesciunt ea, id illum, ipsam enim facere quaerat voluptatem qui voluptatum rem laudantium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste nostrum illum ullam. Quibusdam quidem, quam animi illo error eligendi temporibus unde blanditiis saepe dicta ex laborum dolorem! Distinctio, recusandae.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, ullam reiciendis possimus earum aliquid rem voluptatibus et deserunt sunt iste exercitationem tempora fugit, suscipit tenetur accusamus perferendis? Libero, cum. Magnam.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad excepturi voluptate officia veritatis maiores reprehenderit minima ex quasi nihil molestias, deleniti sed. Iusto hic vero reprehenderit temporibus quam atque deleniti.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ea sapiente perferendis hic. Reprehenderit, laborum eos sequi mollitia voluptatibus molestiae eum quos minus repellendus corrupti ipsam consequatur, illum id perspiciatis?
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi harum, explicabo ex aliquam fugiat at mollitia asperiores quidem, ipsa repellat soluta accusamus eum, a dolore dolores maxime quae cum nihil?
+            </p>
+            
+        </article>
+    </main>
+    <script>
+      function clickMenu(){
+       if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+       } else {
+        itens.style.display = 'block'
+       }
+      }
+    </script>
+
+    /* a parte de script e a parte onde faço a animação do menu hamburguer para aparecer o resto dos itens */
+</body>
+</html>
+
+------------------------------------codigo CSS--------------------------
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    background-color: lightgray;
+
+}
+
+header{
+    background-color:rgb(148, 148, 148);
+
+}
+
+header,h1{
+    padding: 10px;
+    text-align: center;
+}
+
+menu{
+    display: none;
+}
+
+/* essa parte deixo em none para que ele fique oculto ate eu clicar no menu hamburguer*/
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display:block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray;
+
+}
+
+menu > ul > li > a:hover{
+    background-color: gray;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+span#burguer{
+    background-color:rgb(48, 48, 48) ;
+    width: 100vw;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* aqui estou deixando meu menu hamburguer com caixinha dele em cinza pelo rgb deixando sua largura em 100vw, seu display bloqueado, seu texto ao centro do site, seu espaçamento entre o icone e a margim em 10px, e o cursor pointer e que ele tera um efeito de mãozinha quando passo por ele*/
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+/* aqui estou deixando um efeito em branco quando eu passo com o mouse por cima do menu hamburguer deixando ele em branco e com o menu em preto*/
