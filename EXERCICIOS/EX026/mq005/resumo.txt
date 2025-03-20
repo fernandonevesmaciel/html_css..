@@ -267,3 +267,46 @@ span#burguer:hover{
 }
 
 /* aqui estou deixando um efeito em branco quando eu passo com o mouse por cima do menu hamburguer deixando ele em branco e com o menu em preto*/
+
+
+-----------------------------fazendo adaptação para telas maiores-----------
+
+@charset "UTF-8";
+
+/* todas as demais midias*/
+/*typical device breakpoints
+pequenas telas: até 600px
+celular: de 600px até 768px 
+tablet: 768px até 992px
+desktop: 992 até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display:none
+    }
+    menu{
+        display:block
+    }
+
+    menu > ul > li{
+        display: inline-block
+    }
+
+    main{
+        width: 768px;
+    }
+}
+   /* aqui estou falando quando minha tela for maior que 768px vai sumir o menu hamburguer, meu menu vai aparecer a lista de itens que ocutei para celular, meus itens vão ficar um do do lado do outro, e meu texto não vai aumentar mais que 768px.
+
+   tambem fiz outra logica em javaScript para que a tela consiga fazer a transição de forma correta.
+
+    function mudouTamanho(){
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+
+        }
