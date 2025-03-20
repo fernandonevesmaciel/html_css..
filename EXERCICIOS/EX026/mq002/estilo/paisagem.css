@@ -1,7 +1,8 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-/* aparelho deitado */
+/* aparelho deitado (landscape)*/
 
-body {
-    background-color: orange;
+body{
+    background: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
 }
