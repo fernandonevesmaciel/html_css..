@@ -1,0 +1,114 @@
+a estrutura do site tem que ser 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    </head>
+<body>
+    <header>
+    <menu>
+     </menu>
+
+    </header>
+    <main>
+        <article>
+          </article>
+    </main>
+
+</body>
+</html>
+
+para que o menu e as paginas fiquem nos lugares certos.
+
+dae vai acrescentando as coisas em seus devidos lugares
+cria uma pasta estilo e começa a criar forma o site em css.
+
+
+na parte do css
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+     margin: 0px;
+    padding: 0px;
+}
+
+aqui estou dizendo que todo meu site vai ser em Arial, e quando zero a margin e o padding meu cabeçalho fica cheio na tela sem um espaçamento nele.
+
+body, html{
+    background-color: lightgray;
+
+}
+
+aqui estou dizendo que o corpo meu site vai ser em cinza claro.
+
+header{
+    background-color:rgb(148, 148, 148);
+
+}
+
+aqui estou dizeno que o cabeçalho do meu site vai ser um cinza ajustado pelo rgb
+
+header,h1{
+    padding: 10px;
+    text-align: center;
+}
+
+aqui estou dizendo que o meu cabeçalho e o meu titulo vão ter um espaçamento de 10px e o texto presente nele vai ter um alinhamento no centro da tela.
+
+menu{
+    display: block;
+}
+
+aqui estou dizendo que o meu menu vai ter um alinhamento bloqueado sempre na mesma posição na tela mesmo que mude o tamanho da tela.
+
+menu > ul{
+    list-style-type: none;
+}
+
+aqui estou tirando as bolinhas que ficam quando eu adiciono uma lista ao site.
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+
+}
+
+aqui estou dizendo que o meu link vai ter o alinhamento bloqueado igual citei a cima na parte menu, vai ter um espaçamento de 10px, não vai ter uma decoração, vai ter um alinhamento no centro do site, vai ter uma cor da caixa em cinza ajustado na rgb, e a cor da letra será branca.
+
+menu > ul > li > a:hover{
+    background-color: gray;
+}
+
+aqui estou definindo quando eu passar o mouse por cima do meu menu no site, irá trocar a cor para cinza, para dar o efeito mouse passando por cima dele     
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+aqui estou definindo o tamanho do main para que ele ocupe a tela do dispositivo, background-color estou deixando o fundo em branco,estou definindo a margem em automatico para que quando troco o tamanho da tela ele o acompanhe, estou deixando um espaço de 10px para o topo onde fica o cabeçalho, estou deixando um espaço entre o texto e a margem de 10px e estou deixando as bordas da caixa main arredondadas em 10px
+
+article > h2{
+    padding-bottom: 20px;
+}
+
+aqui estou deixando um espaçamento em baixo do meu texto do h2 de 20px
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+aqui estou colocando o alinhamento do meu paragrafo de forma justificada, estou deixando um espaçamento dele em 20px, text-indent e o espaçamento da primeira letra do meu paragrafo, estou deixando ela em 20px.
