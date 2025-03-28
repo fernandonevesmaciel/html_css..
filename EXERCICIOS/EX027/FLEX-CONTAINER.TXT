@@ -65,4 +65,43 @@ uso o flex-flow:
 
 flex-flow: row nowrap;
 
+======================alinhamentodocontainer===========
+
+justify-content= alinha o meu eixo main-axis 
+
+justify-content: flex-start;
+quer dizer que o meu item fica colado no meu main-start.
+
+justify-content: flex-end; 
+quer dizer que o meu item fica colado no meu main-end.
+
+justify-content: center;
+quer dizer que meus itens ficaram centralizados no meu eixo main-axis.
+
+justify-content: space-between;
+quer dizer que ele vai colocar um item no meu main-start e o outro item no meu main-end e os outro itens serão distribuidos por igual.
+
+justify-content: space-evenly
+quer dizer que todos os itens terão espaçamento iguais no eixo main-axis.
+
+justify-content: space-around;
+ele irá separar os itens por iguais como se fosse uma margem a mais um do outro.
+
+aling-items: alinha os itens no eixo cross-axis
+
+aling-items:stretch;
+quando mudado ele estica os itens pelo eixo cross-axis.
+
+aling-items:flex-start;
+ele irá colocar o items colocado no cross-start.
+
+aling-items:flex-end;
+ele irá colocar o item colado no cross-end
+
+aling-items:center;
+irá centralizar os itens no eixo cross-axis.
+
+
+
+
 
