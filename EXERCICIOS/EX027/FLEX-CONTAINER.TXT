@@ -1,0 +1,68 @@
+-------flexible box module----------------------
+
+flex-container= a onde os itens estão localizados.
+
+o display:flex, sempre será adicionado no container ou seja no flex container. onde ele já define que todos os elementos que estão dentro dele será parte do display flex.
+
+flex-direction= caso não coloque esse elemento ou configuração ele automatico fica em ROW.
+ROW= os elementos que estão dentro do elemento "pai", ficam em linhas da esquerda para direita.
+
+ROW-REVERSE= os elementos que estão dentro do elemento "pai", ficaram em linhas so que da direita para a esquerda.
+
+COLUM= os elementos dentro do elemento "pai", ficam em colunas um em cima do outro.
+
+COLUM-REVERSE= os elementos dentro do elemento "pai", ficam em colunas so que a direção dos elementos dentro da coluna vai ser de baixo para cima.
+
+===============eixos===================
+existem dois eixos main-axis o cross-axise
+
+o eixo main-axis sendo o começo dele main-start e o final main-end.
+
+o eixo cross-axis sendo o começo dele cross-start e o final cross-end.
+
+sendo que esses eixos mudam conforme a configuração que colocar em direção sendo elas:
+
+flex-direction: row;
+main-axis: main-start lado esquerdo, main-end lado direito.
+cross-axis: cross-start em cima, cross-end em baixo.
+
+flex-direction: row-reverse;
+main-axis: main start lado direito, main-end lado esquerdo.
+cross-axis: cross-start em cima, cross-end em baixo;
+
+flex-direction: column;
+main-axis: main-start em cima, main-end em baixo.
+cross-axis: cross-start lado esquerdo, cross-end lado direito.
+
+flex-direction: column-reverse;
+main-axis: main-start em baixo, main-end em cima.
+cross-axis: cross-start lado esquerdo, cross-end lado direito.
+
+====================flexwrap==================
+ o encolhimento dos itens dentro dos flexbox depende do conteudo.
+
+ se eu ja coloco display: flex; dentro da minha classe de container ele ja vem como nowrap.
+
+ flexwrap:nowrap;
+ ele não quebra a sequência dos meus elementos.
+
+ flexwrap:wrap;
+ ele quebra a sequência dos meus elementos quando falta espaço dentro do meu container movendo ele no sentido do meu eixo cross-start para cross-end do meu eixo cross-axis.
+
+ flexwrap:wrap-reverse;
+   ele quebra a sequência dos meus elementos quando falta espaço dentro do meu container movendo ele no sentido do meu eixo cross-end para cross-start do meu eixo cross-axis.
+
+
+=======================flexflow========================
+no flexflow podemos usar as duas declarações a cima em so um.
+
+devido usar:
+
+flex-direction: row;
+flex-wrap: nowrap;
+
+uso o flex-flow:
+
+flex-flow: row nowrap;
+
+
