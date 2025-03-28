@@ -101,6 +101,39 @@ ele irá colocar o item colado no cross-end
 aling-items:center;
 irá centralizar os itens no eixo cross-axis.
 
+diferença de justify-content, aling-itemns para align-content é:
+
+justify content vai alinhar os itens dentro do eixo principal main-axis.
+
+aling-itemns vai alinhar os itens dentro do eixo transversal cross-axis.
+
+aling-content vai alinhar os itens dentrodo eixo transversal cross-axis quando eles estão empacotados. 
+
+===========alinhamentoconteudoempacotado===============
+
+align-content quando estou usando wrap para quebrar linhas.
+
+
+align-content: stretch;
+vai pegar a divisão inteira quando quebrado ele vai dividir pelo numero de linhas e estender dentro da caixa ou dentro do container.
+
+align-content: flex-start;
+vai colar os itens no cross-start do eixo cross-axis e vai organizalos la em forma se tiver 3 itens o terceiro irá ficar em baixo do outros dois.
+
+align-content: flex-end;
+vai colar os itens no cross-end do eixo cross-axis e vai organizalos la em forma se tiver 3 itens o terceiro irá ficar em cima do outros dois.
+
+align-contet: center;
+vai alinhar os itens no centro do eixo cross-axis;
+
+aling-content: space-between;
+ele irá colocar os itens dividos em linhas exemplo se quebrar em duas linhas uma linha fica no cross-start ou linha colaa no cross-end, caso tiver três linhas uma fica colada no cross-start, uma fica centralizada e outra fica colada no cross-end.
+
+aling-content: space-evenly;
+os elementos ficam distribuidos de forma simetrica com cada elemento tendo seu espaçamento igual.
+
+aling-content: space-around;
+vai colocar os itens dentro do eixo cross-axis e centralizados dentro das linhas. sendo que as linhas do meio terá o dobro de espaçamento das linhas que estão no cross-start e cross-end.
 
 
 
