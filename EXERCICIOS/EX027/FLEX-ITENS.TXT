@@ -1,1 +1,90 @@
 flex-itens= os itens que estão dentro do flex container.
+
+========================order==========================
+
+todo item em flex box tem um container tem um pai, todo item se não alterar já vem com order: 0;
+
+tambem consigo colocar o numero de ordens em cada item do meu projeto para que ele obedeça o que vai aparecer ou ficar por primeiro na minha tela ou dentro do container.
+
+===============align-self==============================
+
+se aplica aos itens e ele opera no eixo cross-axis.
+
+aling-self:auto; ou inherit;
+ele erda o alinhamento vertical do container (do seu pai).
+
+aling-self: flex-start;
+os itens ficam colados no cross-start.
+
+aling-self: flex-end;
+os itens ficam colados no cross-end.
+
+aling-self: center;
+os itens ficam centralizados;
+
+aling-self: stretch;
+ele estica para preencher todo o espaço do eixo cross-axis.
+
+========================flex-basis========================
+
+para flex-flow: row nowrap;
+
+flex-basis: auto;
+o tamanho do item vai de acordo com o tamanho do conteudo.
+se mudar o tamanho do conteudo ele não irá mudar.
+
+flex-basis: 200px;
+o tamanho vai de acordo que vc quiser a caixa do item ele não irá trocar de acordo com o container. e ele não irá se adaptar pelo tamanho do conteudo.
+caso o container diminua muito de tamanho o texto dentro do item irá quebrar e diminuir de tamanho tambem.
+
+================================================
+
+flex-grow: crescer 
+flex-shrink:  diminuir.
+
+por padrão flex-shrink: 1 e flex-grow:0.
+
+flex-shrink:0;
+em 0 ele não vai diminuir, em 1 ele diminui o item, em dois ele diminui o item duas vezes mais que ele em 1.
+isso acontece se tiver um item com o flex-shrink em 1 e outro em 2. 
+caso tiver os dois itens tiverem em 2 ele vai diminuir normalmente porque ele não vai ter um valor para ter de proporção para crescer duas vezes sobre ele.
+
+flex-grow:0;
+em 0 ele não vai crescer, em 1 ele aumenta o item, em dois ele aumenta o item duas vezes mais que ele em 1.
+isso acontece se tiver um item com o flex-grow em 1 e outro em 2. 
+caso tiver os dois itens tiverem em 2 ele vai crescer normalmente porque ele não vai ter um valor para ter de proporção para crescer duas vezes sobre ele.
+
+
+se eu quiser que meus itens sejam elasticos aumentem e diminuem uso o grow e o shrink em 1.
+
+===============================flex=======================================
+
+com a propriedade flex você pode simplificar flex-basis, flex-grow, flex-shrink.
+
+exemplo:
+flex-basis:150px
+flex-grow:0
+flex-shrink:1
+
+posso usar:
+flex: 0 1 150px;
+
+nota que por primeiro vem o flex-grow depois vem o flex-shrink e por ultimo o flex-basis.
+
+flex: flex-grow flex-shrink flex-basis;
+
+valores muito ultilizados:
+flex: 0 1 auto; ou flex:initial e a mesma coisa.
+
+flex: 0 0 auto; ou flex:none é a mesma coisa, quer dizer que ele não e flexivel.
+
+flex: 1 1 auto; ou flex:auto é a mesma coisa, ele e totalmente flexivel.
+
+ex: flex: 3; e o mesmo que colocar flex: 3 1 auto;
+
+
+
+
+
+
+
